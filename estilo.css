@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.logo {
+    margin-top: 50%;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 2px 2px 15px #000000;
+    position: absolute;
+    left: -200px;
+    animation: enterFromLeft 5s forwards;
+}
+
+#autor{
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 15px #000000;
+    float: right;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sec1 {
+    position: relative;
+    background-color: #bababa;
+    padding: 5%;
+    margin-top: 55%;
+    color: #fff;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#sec1 p {
+    color: #000000;
+}
+
+#ac1 {
+    background-color: #05382a;
+}
+
+#sec2 {
+    position: relative;
+    background-color: #c7a97e;
+    padding: 5%;
+    color: #fff;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+#sec3 {
+    position: relative;
+    background-color: #7e6d5c;
+    padding: 5%;
+    color: #fff;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+#sec6 {
+    position: relative;
+    background-color: #4a1623;
+    padding: 5%;
+    color: #fff;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+#sec11 {
+    position: relative;
+    background-color: #05382a;
+    padding: 5%;
+    color: #fff;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.is img {
+    width: 100%;
+    padding-top: 15%;
+}
+
+audio {
+    margin: 10% 0;
+}
+
+.imgS {
+    justify-content: center;
+    vertical-align: middle;
+    width: 90%;
+}
+
+#the1 {
+    width: 50%;
+    position: absolute;
+    left: -500%;
+    animation: mover 15s infinite alternate;
+    animation-timing-function: ease;
+}
+
+#cardigan {
+    width: 110%;
+    animation: movimiento 5s infinite;
+    transform-origin: center;
+}
+
+#is1 {
+    width: 25%;
+    position: absolute;
+    animation: mover1 5s infinite alternate;
+    animation-timing-function: ease;
+}
+
+#is2 {
+    width: 25%;
+    position: absolute;
+    animation: mover2 5s infinite alternate;
+    animation-timing-function: ease;
+}
+
+#tlgad {
+    margin-top: 5%;
+    width: 50%;
+    position: absolute;
+    animation: mover3 20s infinite linear;
+    animation-timing-function: ease;
+}
+
+@keyframes enterFromLeft {
+    0% {
+        left: -200%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes mover {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        transform: rotateZ(7deg);
+    }
+
+    100% {
+        left: 10%;
+        opacity: .1;
+    }
+}
+
+@keyframes caida {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .5;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes mover1 {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 1%;
+    }
+}
+
+@keyframes mover2 {
+    0% {
+        left: 25%;
+    }
+
+    100% {
+        left: 24%;
+    }
+}
+
+@keyframes mover3 {
+    0% {
+        left: -50%;
+    }
+
+    10% {
+        transform: rotateZ(-2deg);
+    }
+
+    20% {
+        transform: rotateZ(3deg);
+    }
+
+    30% {
+        transform: rotateZ(-1deg);
+    }
+
+    40% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        left: 7%;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(5deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+#discoball {
+    width: 75%;
+    top: 0;
+    left: 50%;
+    animation: caida 30s infinite alternate;
+    animation-timing-function: ease;
+}
+
+@media (max-width: 480px) {
+    #the1 {
+        display: none;
+    }
+
+    #cardigan {
+        display: none;
+    }
+
+    #tlgad {
+        display: none;
+    }
+
+    #discoball {
+        display: none;
+    }
+
+    #is1 {
+        display: none;
+    }
+
+    #is2 {
+        display: none;
+    }
+}
